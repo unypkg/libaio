@@ -84,7 +84,7 @@ sed -i '/install.*libaio.a/s/^/#/' src/Makefile
 
 make -j"$(nproc)" prefix=/uny/pkg/"$pkgname"/"$pkgver"
 
-make -j"$(nproc)" install
+make -j"$(nproc)" prefix=/uny/pkg/"$pkgname"/"$pkgver" install
 
 ####################################################
 ### End of individual build script
